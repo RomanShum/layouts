@@ -53,6 +53,8 @@ function Store() {
       case "view_module":
         setIcon("view_list");
         break;
+      default:
+        break;
     }
   };
 

@@ -1,8 +1,7 @@
 function ShopItem({ item }) {
   return (
     <div className="list">
-      <img className="listImg" src={item.img} />
-
+      <img className="listImg" src={item.img} alt={item.name} />
       <h3>{item.name}</h3>
       <p>{item.color}</p>
       <p class="price">${item.price}</p>
