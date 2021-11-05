@@ -43,7 +43,7 @@ const products = [
 ];
 
 function Store() {
-  const [icon, setIcon] = useState("view_module");
+  const [icon, setIcon] = useState("view_list");
 
   const handleSwitch = () => {
     switch (icon) {
@@ -60,7 +60,7 @@ function Store() {
 
   return (
     <div className="store">
-      <div class="icon">
+      <div className="icon">
         <IconSwitch icon={icon} onSwitch={handleSwitch} />
       </div>
       {icon === "view_list" ? (

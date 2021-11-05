@@ -4,7 +4,7 @@ function ShopItem({ item }) {
       <img className="listImg" src={item.img} alt={item.name} />
       <h3>{item.name}</h3>
       <p>{item.color}</p>
-      <p class="price">${item.price}</p>
+      <p className="price">${item.price}</p>
       <button className="add">ADD TO CARD</button>
     </div>
   );
