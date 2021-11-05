@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+.add {
+  border: 1px solid red;
+  padding: 10px 10px;
+  border-radius: 15px;
+  background: transparent;
+  color: red;
+  font-weight: 700;
+  cursor: pointer;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.store {
+  flex-direction: column;
+  display: flex;
+  align-items: flex-end;
+  align-content: center;
+  flex-wrap: wrap;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cardsView {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 60%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card_img {
+  width: 350px;
+}
+.card_header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: relative;
+  top: 70px;
 }
-
-.App-link {
-  color: #61dafb;
+.card_header p,
+.card_header h3 {
+  margin: 0;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cardWrap {
+  height: 350px;
+  flex: 1 1 auto;
+  margin-top: 15px;
+  margin-left: auto;
 }
+.card_footer {
+  color: red;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  bottom: 70px;
+  height: 50px;
+  align-items: center;
+}
+.icon {
+  color: rgb(73, 73, 73);
+  font-size: 10px;
+  cursor: pointer;
+}
+.listImg {
+  height: 130px;
+  position: relative;
+  bottom: 15px;
+}
+.list {
+  overflow: hidden;
+  height: 70px;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 3px;
+}
+.listView {
+  width: 90%;
+}
+.price {
+  color: red;
+}
+/* .cardsView,
+.store,
+.cardWrap,
+.card_footer {
+  display: flex;
+}
+.cardWrap {
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+}
+.cardsView {
+  flex-wrap: wrap;
+}
+.card_img {
+  width: 350px;
+} */
